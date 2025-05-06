@@ -14,6 +14,36 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Ch22_hair
     second: {fileID: 2100000, guid: a2e00f411c466894e85a500b8a756072, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1001_Diffuse
+    second: {fileID: 2800000, guid: 5ddd16f013a15c74d937d90d14b1af17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1001_Glossiness
+    second: {fileID: 2800000, guid: 49d39b4de4c1a1544bf9df97e58f7278, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1001_Normal
+    second: {fileID: 2800000, guid: 81964a0065bbd534fbb636d99cf5d1a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1001_Specular
+    second: {fileID: 2800000, guid: 416880123e7e8854c991a9abfac612e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1002_Diffuse
+    second: {fileID: 2800000, guid: 676061a9bc7f6684b942f84080d1023f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch22_1002_Normal
+    second: {fileID: 2800000, guid: f2818a9d0fc43274faee61660c181e89, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
