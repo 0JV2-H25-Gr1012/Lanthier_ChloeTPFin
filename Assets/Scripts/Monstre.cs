@@ -13,12 +13,17 @@ public class Monstre : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
 
-        _agent.SetDestination(_cible.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        BougerAgent();
+    }
+
+    void BougerAgent(){
+
+        _agent.SetDestination(_cible.position);
+
     }
 }
