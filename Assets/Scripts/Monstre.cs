@@ -5,25 +5,30 @@ using UnityEngine.AI;
 
 public class Monstre : MonoBehaviour
 {
-    
     private NavMeshAgent _agent;
-    [SerializeField] private Transform _cible;
+    private Transform _cible;
 
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
 
+        // Automatically find the player by tag
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            _cible = player.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Player not found! Make sure the player is tagged as 'Player'.");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        BougerAgent();
-    }
-
-    void BougerAgent(){
-
-        _agent.SetDestination(_cible.position);
-
+        if (_cible != null)
+        {
+            _agent.SetDestination(_cible.position);
+        }
     }
 }
