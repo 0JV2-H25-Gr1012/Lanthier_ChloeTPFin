@@ -289,6 +289,60 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: 00000000
+--- !u!1 &22395001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 974238578668270704, guid: c708a3b79cd542b42bbfedb17e213bc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2112342496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &22395009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22395001}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.34, y: 0.75, z: 0.19}
+  m_Center: {x: 0, y: 1.37, z: 0.18}
+--- !u!54 &22395010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22395001}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &22745096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -824,6 +878,7 @@ Transform:
   m_Children:
   - {fileID: 668410388}
   - {fileID: 654325600}
+  - {fileID: 1928106543}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &81355056
@@ -1548,7 +1603,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!1001 &188677511
 PrefabInstance:
@@ -5404,6 +5459,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beer Can Blue Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 937326242163579350, guid: 7690bf91c4240ca4b876e0de5b4034af,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1017149123105775675, guid: 7690bf91c4240ca4b876e0de5b4034af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5454,6 +5514,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1139878934128806084, guid: 7690bf91c4240ca4b876e0de5b4034af,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5462,6 +5527,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 671680964}
+    - targetCorrespondingSourceObject: {fileID: 937326242163579350, guid: 7690bf91c4240ca4b876e0de5b4034af,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 671680965}
   m_SourcePrefab: {fileID: 100100000, guid: 7690bf91c4240ca4b876e0de5b4034af, type: 3}
 --- !u!4 &349679425 stripped
 Transform:
@@ -6043,10 +6112,19 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: 8364520236911588, guid: 0f19a732006400947981c8a94548a823, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 124406358728296116, guid: 0f19a732006400947981c8a94548a823,
         type: 3}
       propertyPath: m_Name
       value: Apple Core Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 124406358728296116, guid: 0f19a732006400947981c8a94548a823,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7512023185531021596, guid: 0f19a732006400947981c8a94548a823,
         type: 3}
@@ -6106,6 +6184,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 912924035}
+    - targetCorrespondingSourceObject: {fileID: 124406358728296116, guid: 0f19a732006400947981c8a94548a823,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 912924036}
   m_SourcePrefab: {fileID: 100100000, guid: 0f19a732006400947981c8a94548a823, type: 3}
 --- !u!4 &401397704 stripped
 Transform:
@@ -6300,6 +6382,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fish Bone
       objectReference: {fileID: 0}
+    - target: {fileID: 5438048726324099442, guid: 2d6b1262a50aace469e5f5bf10e390fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810961958893650871, guid: 2d6b1262a50aace469e5f5bf10e390fb,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6308,6 +6400,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1747157446}
+    - targetCorrespondingSourceObject: {fileID: 5438048726324099442, guid: 2d6b1262a50aace469e5f5bf10e390fb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1747157447}
   m_SourcePrefab: {fileID: 100100000, guid: 2d6b1262a50aace469e5f5bf10e390fb, type: 3}
 --- !u!4 &410301491 stripped
 Transform:
@@ -6493,7 +6589,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!1001 &433413232
 PrefabInstance:
@@ -6558,10 +6654,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -2216041187483325611, guid: c840387747cb48f409bf9c9708a4d90d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3230034147011233538, guid: c840387747cb48f409bf9c9708a4d90d,
         type: 3}
       propertyPath: m_Name
       value: Soda Can Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230034147011233538, guid: c840387747cb48f409bf9c9708a4d90d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4536291819999006714, guid: c840387747cb48f409bf9c9708a4d90d,
         type: 3}
@@ -6621,6 +6727,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1720313157}
+    - targetCorrespondingSourceObject: {fileID: 3230034147011233538, guid: c840387747cb48f409bf9c9708a4d90d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1720313158}
   m_SourcePrefab: {fileID: 100100000, guid: c840387747cb48f409bf9c9708a4d90d, type: 3}
 --- !u!4 &438786462 stripped
 Transform:
@@ -8982,6 +9092,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Core Green
       objectReference: {fileID: 0}
+    - target: {fileID: 124406358728296116, guid: 04de276320549a847b966b845005a946,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557948418060459380, guid: 04de276320549a847b966b845005a946,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7512023185531021596, guid: 04de276320549a847b966b845005a946,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9040,6 +9160,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 590289527}
+    - targetCorrespondingSourceObject: {fileID: 124406358728296116, guid: 04de276320549a847b966b845005a946,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 590289528}
   m_SourcePrefab: {fileID: 100100000, guid: 04de276320549a847b966b845005a946, type: 3}
 --- !u!4 &590289522 stripped
 Transform:
@@ -9068,6 +9192,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &590289528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235358041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &594366542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9279,7 +9416,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!1001 &618311180
 PrefabInstance:
@@ -9940,6 +10077,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &671680965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671680959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &678445442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10162,7 +10312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points : 0'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -10302,6 +10452,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beer Can Green Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 3417596192309181735, guid: be2f3a70d7cff0d499d97d845208aafb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384885766146472034, guid: be2f3a70d7cff0d499d97d845208aafb,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10310,6 +10470,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1608191199}
+    - targetCorrespondingSourceObject: {fileID: 3417596192309181735, guid: be2f3a70d7cff0d499d97d845208aafb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1608191200}
   m_SourcePrefab: {fileID: 100100000, guid: be2f3a70d7cff0d499d97d845208aafb, type: 3}
 --- !u!4 &701949256 stripped
 Transform:
@@ -10729,7 +10893,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 0.85, z: 1.18}
+  m_Size: {x: 2.5, y: 0.31, z: 1.18}
   m_Center: {x: -0.08, y: 0.4, z: -0.03}
 --- !u!1 &741851097
 GameObject:
@@ -11378,7 +11542,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1370536605321993867, guid: 73dd7a893b9f3b547a73fc800af96e4f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1430740882}
   m_SourcePrefab: {fileID: 100100000, guid: 73dd7a893b9f3b547a73fc800af96e4f, type: 3}
 --- !u!1001 &810330943
 PrefabInstance:
@@ -11710,10 +11878,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -5224089314846810209, guid: 9f4eb6324d951e44db05ce09a003bb0f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1171627040053429581, guid: 9f4eb6324d951e44db05ce09a003bb0f,
         type: 3}
       propertyPath: m_Name
       value: Fish Bone 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171627040053429581, guid: 9f4eb6324d951e44db05ce09a003bb0f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1941591342401959173, guid: 9f4eb6324d951e44db05ce09a003bb0f,
         type: 3}
@@ -11773,6 +11951,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1281266024}
+    - targetCorrespondingSourceObject: {fileID: 1171627040053429581, guid: 9f4eb6324d951e44db05ce09a003bb0f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1281266025}
   m_SourcePrefab: {fileID: 100100000, guid: 9f4eb6324d951e44db05ce09a003bb0f, type: 3}
 --- !u!4 &837857508 stripped
 Transform:
@@ -12416,6 +12598,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &912924036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912924030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!4 &913934467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490584, guid: b0f7abaadca23ea4d910efe028624076,
@@ -13062,6 +13257,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soda Can Green Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 3230034147011233538, guid: f02a92e1ab7d32d4fad570cd12c80c3e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142526846206937386, guid: f02a92e1ab7d32d4fad570cd12c80c3e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4536291819999006714, guid: f02a92e1ab7d32d4fad570cd12c80c3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13120,6 +13325,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666519941}
+    - targetCorrespondingSourceObject: {fileID: 3230034147011233538, guid: f02a92e1ab7d32d4fad570cd12c80c3e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666519942}
   m_SourcePrefab: {fileID: 100100000, guid: f02a92e1ab7d32d4fad570cd12c80c3e, type: 3}
 --- !u!4 &1001624860 stripped
 Transform:
@@ -13822,10 +14031,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -192665788361841660, guid: ee6951d938497174989b85bc977b2e7a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7013320978822667758, guid: ee6951d938497174989b85bc977b2e7a,
         type: 3}
       propertyPath: m_Name
       value: Soda Can Orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013320978822667758, guid: ee6951d938497174989b85bc977b2e7a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8319016939627517206, guid: ee6951d938497174989b85bc977b2e7a,
         type: 3}
@@ -13885,6 +14104,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2021060797}
+    - targetCorrespondingSourceObject: {fileID: 7013320978822667758, guid: ee6951d938497174989b85bc977b2e7a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2021060798}
   m_SourcePrefab: {fileID: 100100000, guid: ee6951d938497174989b85bc977b2e7a, type: 3}
 --- !u!4 &1094429041 stripped
 Transform:
@@ -15366,6 +15589,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -2865801498795934233, guid: 95ba25c767eeddc46899aa0fd76f63be,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 124556297506182369, guid: 95ba25c767eeddc46899aa0fd76f63be,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15421,6 +15649,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Bone
       objectReference: {fileID: 0}
+    - target: {fileID: 1153803601918318987, guid: 95ba25c767eeddc46899aa0fd76f63be,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15429,6 +15662,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1264632326}
+    - targetCorrespondingSourceObject: {fileID: 1153803601918318987, guid: 95ba25c767eeddc46899aa0fd76f63be,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264632327}
   m_SourcePrefab: {fileID: 100100000, guid: 95ba25c767eeddc46899aa0fd76f63be, type: 3}
 --- !u!4 &1233033100 stripped
 Transform:
@@ -15746,6 +15983,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1264632327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264632321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1271865384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15896,6 +16146,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1281266025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281266019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1 &1290732724
 GameObject:
   m_ObjectHideFlags: 0
@@ -16264,10 +16527,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -6445860409259321406, guid: c8123449a980e6c438fa9bb06277785a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3230034147011233538, guid: c8123449a980e6c438fa9bb06277785a,
         type: 3}
       propertyPath: m_Name
       value: Soda Can Red Crushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230034147011233538, guid: c8123449a980e6c438fa9bb06277785a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4536291819999006714, guid: c8123449a980e6c438fa9bb06277785a,
         type: 3}
@@ -16327,6 +16600,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1928384313}
+    - targetCorrespondingSourceObject: {fileID: 3230034147011233538, guid: c8123449a980e6c438fa9bb06277785a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1928384314}
   m_SourcePrefab: {fileID: 100100000, guid: c8123449a980e6c438fa9bb06277785a, type: 3}
 --- !u!4 &1313248907 stripped
 Transform:
@@ -16601,6 +16878,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -3044107094567694562, guid: d346a7c25a992d94a9a1af7f234074b3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5030995060192657177, guid: d346a7c25a992d94a9a1af7f234074b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16656,6 +16938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beer Can Red Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 5102017246056220404, guid: d346a7c25a992d94a9a1af7f234074b3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16664,6 +16951,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2064435444}
+    - targetCorrespondingSourceObject: {fileID: 5102017246056220404, guid: d346a7c25a992d94a9a1af7f234074b3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064435445}
   m_SourcePrefab: {fileID: 100100000, guid: d346a7c25a992d94a9a1af7f234074b3, type: 3}
 --- !u!4 &1333914332 stripped
 Transform:
@@ -17357,6 +17648,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -3762348041308110882, guid: 86cd66e551e6e1748aee29ef7980b668,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7557240043413461849, guid: 86cd66e551e6e1748aee29ef7980b668,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17412,6 +17708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beer Can Green
       objectReference: {fileID: 0}
+    - target: {fileID: 8847306447234913185, guid: 86cd66e551e6e1748aee29ef7980b668,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17420,6 +17721,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1413500967}
+    - targetCorrespondingSourceObject: {fileID: 8847306447234913185, guid: 86cd66e551e6e1748aee29ef7980b668,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1413500968}
   m_SourcePrefab: {fileID: 100100000, guid: 86cd66e551e6e1748aee29ef7980b668, type: 3}
 --- !u!4 &1413500962 stripped
 Transform:
@@ -17448,6 +17753,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1413500968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49136009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1423122112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17511,6 +17829,33 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1423122112}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1430740881 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1370536605321993867, guid: 73dd7a893b9f3b547a73fc800af96e4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 808702643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1430740882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430740881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.33, y: 1.36, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1441909807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2119775930974504096, guid: c708a3b79cd542b42bbfedb17e213bc1,
@@ -17584,10 +17929,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: 1289582196791770506, guid: 5f6a44704381d674fbe683276b29b7aa,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3230034147011233538, guid: 5f6a44704381d674fbe683276b29b7aa,
         type: 3}
       propertyPath: m_Name
       value: Beer Can Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230034147011233538, guid: 5f6a44704381d674fbe683276b29b7aa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4536291819999006714, guid: 5f6a44704381d674fbe683276b29b7aa,
         type: 3}
@@ -17647,6 +18002,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1986411505}
+    - targetCorrespondingSourceObject: {fileID: 3230034147011233538, guid: 5f6a44704381d674fbe683276b29b7aa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1986411506}
   m_SourcePrefab: {fileID: 100100000, guid: 5f6a44704381d674fbe683276b29b7aa, type: 3}
 --- !u!4 &1454858512 stripped
 Transform:
@@ -17969,7 +18328,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 0.85, z: 1.18}
+  m_Size: {x: 2.5, y: 0.31, z: 1.18}
   m_Center: {x: -0.08, y: 0.4, z: -0.03}
 --- !u!1001 &1481328309
 PrefabInstance:
@@ -18537,7 +18896,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!1001 &1504487712
 PrefabInstance:
@@ -19196,6 +19555,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1608191200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608191194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1612172695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19479,6 +19851,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: 5352752513575406722, guid: aa391fa7c7d49314785fa3f647c03048,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6988246613009678934, guid: aa391fa7c7d49314785fa3f647c03048,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19534,6 +19911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soda Can Orange Crushed
       objectReference: {fileID: 0}
+    - target: {fileID: 8276625273990236846, guid: aa391fa7c7d49314785fa3f647c03048,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19542,6 +19924,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1643183976}
+    - targetCorrespondingSourceObject: {fileID: 8276625273990236846, guid: aa391fa7c7d49314785fa3f647c03048,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643183977}
   m_SourcePrefab: {fileID: 100100000, guid: aa391fa7c7d49314785fa3f647c03048, type: 3}
 --- !u!4 &1643183971 stripped
 Transform:
@@ -19570,6 +19956,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1643183977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58740760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1 &1661586375
 GameObject:
   m_ObjectHideFlags: 0
@@ -19679,6 +20078,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1666519942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666519936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1667225669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20033,7 +20445,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!1001 &1681347142
 PrefabInstance:
@@ -20615,6 +21027,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1720313158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720313152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1728521031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20718,7 +21143,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 0.85, z: 1.18}
+  m_Size: {x: 2.5, y: 0.31, z: 1.18}
   m_Center: {x: -0.08, y: 0.4, z: -0.03}
 --- !u!1001 &1737189280
 PrefabInstance:
@@ -20894,7 +21319,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5, y: 0.85, z: 1.18}
+  m_Size: {x: 2.5, y: 0.31, z: 1.18}
   m_Center: {x: -0.08, y: 0.4, z: -0.03}
 --- !u!1001 &1743205734
 PrefabInstance:
@@ -20904,10 +21329,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -8271502452497730446, guid: 20f6fca5559075148b1e6d06957f81ea,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6143752882634769234, guid: 20f6fca5559075148b1e6d06957f81ea,
         type: 3}
       propertyPath: m_Name
       value: Half Eaten Cheeseburger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143752882634769234, guid: 20f6fca5559075148b1e6d06957f81ea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6143752882634769239, guid: 20f6fca5559075148b1e6d06957f81ea,
         type: 3}
@@ -20982,6 +21417,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1743205740}
+    - targetCorrespondingSourceObject: {fileID: 6143752882634769234, guid: 20f6fca5559075148b1e6d06957f81ea,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1743205741}
   m_SourcePrefab: {fileID: 100100000, guid: 20f6fca5559075148b1e6d06957f81ea, type: 3}
 --- !u!4 &1743205735 stripped
 Transform:
@@ -21010,6 +21449,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1743205741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754594226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1 &1747157441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5438048726324099442, guid: 2d6b1262a50aace469e5f5bf10e390fb,
@@ -21037,6 +21489,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1747157447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747157441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1752645147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22835,6 +23300,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 896184018}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1928106542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1928106543}
+  - component: {fileID: 1928106544}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1928106543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928106542}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 849.0259, y: 36.30533, z: 175.17651}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 66605258}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928106544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928106542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1ba2e5683c3f7478b436b718e15e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 701074572}
 --- !u!1 &1928384308 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3230034147011233538, guid: c8123449a980e6c438fa9bb06277785a,
@@ -22862,6 +23372,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1928384314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928384308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &1928973313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23562,7 +24085,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.63, y: 1.12, z: 1.15}
+  m_Size: {x: 2.63, y: 0.4, z: 1.15}
   m_Center: {x: -0.08, y: 0.51, z: -0.09}
 --- !u!4 &1975263217 stripped
 Transform:
@@ -23717,6 +24240,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1986411506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986411500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &2001658647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23880,6 +24416,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2021060798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021060792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1001 &2029062280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23947,6 +24496,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -1370846706039041518, guid: 5c5315a832f1fa040b2831c887de01f8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7793023651675049704, guid: 5c5315a832f1fa040b2831c887de01f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24002,6 +24556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beer Can Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 9079580285254665744, guid: 5c5315a832f1fa040b2831c887de01f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24010,6 +24569,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2038766546}
+    - targetCorrespondingSourceObject: {fileID: 9079580285254665744, guid: 5c5315a832f1fa040b2831c887de01f8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2038766547}
   m_SourcePrefab: {fileID: 100100000, guid: 5c5315a832f1fa040b2831c887de01f8, type: 3}
 --- !u!4 &2038766541 stripped
 Transform:
@@ -24038,6 +24601,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2038766547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412581610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!4 &2041133974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490584, guid: b0f7abaadca23ea4d910efe028624076,
@@ -24203,10 +24779,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2064533804}
     m_Modifications:
+    - target: {fileID: -2281206585452879042, guid: dcbc01726f8551e4895aa72699112ee4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3230034147011233538, guid: dcbc01726f8551e4895aa72699112ee4,
         type: 3}
       propertyPath: m_Name
       value: Soda Can Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230034147011233538, guid: dcbc01726f8551e4895aa72699112ee4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4536291819999006714, guid: dcbc01726f8551e4895aa72699112ee4,
         type: 3}
@@ -24266,6 +24852,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2049880361}
+    - targetCorrespondingSourceObject: {fileID: 3230034147011233538, guid: dcbc01726f8551e4895aa72699112ee4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2049880362}
   m_SourcePrefab: {fileID: 100100000, guid: dcbc01726f8551e4895aa72699112ee4, type: 3}
 --- !u!4 &2049880356 stripped
 Transform:
@@ -24294,6 +24884,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2049880362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466741405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!4 &2063630878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 493860, guid: a73967be39a7cc74ca310e8a9d9de82d,
@@ -24327,6 +24930,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2064435445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064435439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d594c28131d4efe42b1bba469ca93400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1
 --- !u!1 &2064533803
 GameObject:
   m_ObjectHideFlags: 0
@@ -24737,7 +25353,15 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 575096193}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 974238578668270704, guid: c708a3b79cd542b42bbfedb17e213bc1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 22395009}
+    - targetCorrespondingSourceObject: {fileID: 974238578668270704, guid: c708a3b79cd542b42bbfedb17e213bc1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 22395010}
   m_SourcePrefab: {fileID: 100100000, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}
 --- !u!4 &2112342497 stripped
 Transform:
