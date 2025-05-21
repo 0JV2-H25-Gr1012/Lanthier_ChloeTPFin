@@ -9,4 +9,19 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene("niveau1");
     }
+
+    public void LoadNiveau2()
+    {
+        SceneManager.LoadScene("niveau2");
+    }
+
+    public void RestartNiveau1()
+    {
+        SceneManager.LoadScene("niveau1");
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
