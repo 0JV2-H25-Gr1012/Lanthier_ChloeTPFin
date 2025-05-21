@@ -23,9 +23,10 @@ public class GameTimer : MonoBehaviour
             timeRemaining = 0;
             timerIsRunning = false;
 
-            // Timer ran out – trigger defeat using GameResult
             GameResult.DidPlayerWin = false;
+            GameResult.PreviousScene = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("MenuDeFin");
+
         }
     }
 

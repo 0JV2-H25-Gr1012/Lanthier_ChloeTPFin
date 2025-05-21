@@ -1,23 +1,49 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndScreenManager : MonoBehaviour
 {
-    public GameObject victoryScreen;  // assign in Inspector
-    public GameObject defeatScreen;   // assign in Inspector
+    public GameObject victoryScreen;
+    public GameObject victoryLevel1Screen;
+    public GameObject defeatScreen;
 
-    void Start()
+void Start()
+{
+    Invoke("ShowEndScreen", 0.1f); // Small delay
+}
+
+void ShowEndScreen()
+{
+    string previousScene = GameResult.PreviousScene;
+    Debug.Log("🟦 Previous Scene: " + previousScene);
+    Debug.Log("🟨 DidPlayerWin: " + GameResult.DidPlayerWin);
+
+    if (GameResult.DidPlayerWin)
     {
-        if (GameResult.DidPlayerWin)
+        if (previousScene == "niveau1")
         {
-            victoryScreen.SetActive(true);
-            defeatScreen.SetActive(false);
+            Debug.Log("🟢 Victory Screen for Level 1");
+            victoryLevel1Screen.SetActive(true);
+            victoryScreen.SetActive(false);
         }
         else
         {
-            victoryScreen.SetActive(false);
-            defeatScreen.SetActive(true);
+            Debug.Log("🟢 General Victory Screen");
+            victoryScreen.SetActive(true);
+            victoryLevel1Screen.SetActive(false);
         }
+
+        defeatScreen.SetActive(false);
     }
+    else
+    {
+        Debug.Log("🔴 Player lost. Showing defeat screen.");
+        victoryScreen.SetActive(false);
+        victoryLevel1Screen.SetActive(false);
+        defeatScreen.SetActive(true);
+    }
+}
+
+
 }

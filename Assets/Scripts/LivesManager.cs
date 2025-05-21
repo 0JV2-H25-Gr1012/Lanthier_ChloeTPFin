@@ -31,9 +31,10 @@ public class LivesManager : MonoBehaviour
                 Heart1.enabled = false;
                 Debug.Log("Lost final life. Game Over!");
 
-                // Trigger defeat screen
                 GameResult.DidPlayerWin = false;
+                GameResult.PreviousScene = SceneManager.GetActiveScene().name;
                 SceneManager.LoadScene("MenuDeFin");
+
                 break;
         }
     }
