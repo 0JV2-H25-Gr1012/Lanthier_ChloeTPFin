@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour
 
         if (score >= 18)
         {
+            GameResult.DidPlayerWin = true;
             SceneManager.LoadScene("MenuDeFin");
         }
     }
