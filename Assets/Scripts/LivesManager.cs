@@ -8,12 +8,27 @@ public class LivesManager : MonoBehaviour
     public Image Heart2;
     public Image Heart3;
 
+    public AudioClip[] hitSounds; // Assign 3 hit sounds in Inspector
+    private AudioSource audioSource;
+
     private int lives = 3;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void LoseLife()
     {
         if (lives <= 0)
             return;
+
+        // Play random hit sound
+        if (hitSounds.Length > 0 && audioSource != null)
+        {
+            int index = Random.Range(0, hitSounds.Length);
+            audioSource.PlayOneShot(hitSounds[index]);
+        }
 
         lives--;
 
