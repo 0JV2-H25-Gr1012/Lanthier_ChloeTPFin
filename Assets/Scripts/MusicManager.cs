@@ -6,30 +6,26 @@ public class MusicManager : MonoBehaviour
     private AudioSource audioSource;
 
     void Awake()
+{
+    if (instance == null)
     {
-        // Singleton check to prevent duplicates
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
 
-            audioSource = GetComponent<AudioSource>();
+        float volume = PlayerPrefs.GetFloat("musicVol", 0.5f);
 
-            float savedVolume = PlayerPrefs.GetFloat("volume", 0.5f);
-            AudioListener.volume = savedVolume;
+        audioSource.volume = volume;
 
-            if (audioSource != null)
-            {
-                audioSource.volume = savedVolume;
-                audioSource.loop = true;
-                audioSource.Play();
-            }
-        }
-        else
-        {
-            Destroy(gameObject); 
-        }
+        audioSource.loop = true;
+        audioSource.Play();
     }
+    else
+    {
+        Destroy(gameObject);
+    }
+}
+
 
     public void UpdateVolume(float newVolume)
     {
