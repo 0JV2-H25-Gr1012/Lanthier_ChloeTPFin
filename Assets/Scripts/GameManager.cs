@@ -9,11 +9,6 @@ public class GameManager : MonoBehaviour
 
     private bool gameEnded = false;
 
-    void Awake()
-    {
-       
-    }
-
     public void EndGame(bool victory)
     {
         if (gameEnded) return;
@@ -22,6 +17,9 @@ public class GameManager : MonoBehaviour
         EndGameData.finalScore = scoreManager.GetScore();
         EndGameData.timeLeft = gameTimer.GetRemainingTime();
         EndGameData.livesLeft = livesManager.GetLives();
+
+        GameResult.DidPlayerWin = victory;
+        GameResult.PreviousScene = SceneManager.GetActiveScene().name;
 
         SceneManager.LoadScene("MenuDeFin");
     }
