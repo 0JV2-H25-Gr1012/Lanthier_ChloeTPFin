@@ -8,7 +8,7 @@ public class LivesManager : MonoBehaviour
     public Image Heart2;
     public Image Heart3;
 
-    public AudioClip[] hitSounds; // Assign 3 hit sounds in Inspector
+    public AudioClip[] hitSounds; 
     private AudioSource audioSource;
 
     private int lives = 3;
@@ -23,7 +23,7 @@ public class LivesManager : MonoBehaviour
         if (lives <= 0)
             return;
 
-        // Play random hit sound
+        
         if (hitSounds.Length > 0 && audioSource != null)
         {
             int index = Random.Range(0, hitSounds.Length);
@@ -48,9 +48,14 @@ public class LivesManager : MonoBehaviour
 
                 GameResult.DidPlayerWin = false;
                 GameResult.PreviousScene = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene("MenuDeFin");
+                FindObjectOfType<GameManager>().EndGame(false);
 
                 break;
         }
+    }
+
+    public int GetLives()
+    {
+        return lives;
     }
 }

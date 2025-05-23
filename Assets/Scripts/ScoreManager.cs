@@ -22,11 +22,11 @@ public class ScoreManager : MonoBehaviour
         score += amount;
         UpdateScoreUI();
 
-        if (score >= 18)
+        if (score >= 3)
         {
             GameResult.DidPlayerWin = true;
             GameResult.PreviousScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("MenuDeFin");
+            FindObjectOfType<GameManager>().EndGame(true);
         }
     }
 
@@ -34,5 +34,10 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
             scoreText.text = "Score: " + score;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }

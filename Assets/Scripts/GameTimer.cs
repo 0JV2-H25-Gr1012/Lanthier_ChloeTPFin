@@ -25,8 +25,7 @@ public class GameTimer : MonoBehaviour
 
             GameResult.DidPlayerWin = false;
             GameResult.PreviousScene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("MenuDeFin");
-
+            FindObjectOfType<GameManager>().EndGame(false);
         }
     }
 
@@ -35,5 +34,10 @@ public class GameTimer : MonoBehaviour
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public float GetRemainingTime()
+    {
+        return timeRemaining;
     }
 }
