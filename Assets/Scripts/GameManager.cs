@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+       
     }
 
     public void EndGame(bool victory)
