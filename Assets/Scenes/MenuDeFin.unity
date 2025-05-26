@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3692,6 +3692,7 @@ GameObject:
   - component: {fileID: 1284963156}
   - component: {fileID: 1284963155}
   - component: {fileID: 1284963158}
+  - component: {fileID: 1284963159}
   m_Layer: 0
   m_Name: Victoire
   m_TagString: Untagged
@@ -3807,6 +3808,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da1a1384cbe8f04b975483ab40858d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1284963159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284963153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d23e41368655f4094ebc3aee9be488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameDisplay: {fileID: 1002302445}
 --- !u!1 &1303762247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,13 +5918,14 @@ GameObject:
   - component: {fileID: 1760453456}
   - component: {fileID: 1760453455}
   - component: {fileID: 1760453459}
+  - component: {fileID: 1760453460}
   m_Layer: 5
   m_Name: Victoire1niveau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1760453455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6018,6 +6033,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da1a1384cbe8f04b975483ab40858d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1760453460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760453454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d23e41368655f4094ebc3aee9be488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameDisplay: {fileID: 512297039}
 --- !u!1 &1769175820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,7 +6610,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7642,6 +7670,7 @@ GameObject:
   - component: {fileID: 2076517451}
   - component: {fileID: 2076517450}
   - component: {fileID: 2076517453}
+  - component: {fileID: 2076517454}
   m_Layer: 0
   m_Name: Defaite
   m_TagString: Untagged
@@ -7755,6 +7784,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da1a1384cbe8f04b975483ab40858d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2076517454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076517448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d23e41368655f4094ebc3aee9be488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameDisplay: {fileID: 859441007}
 --- !u!1 &2116028080
 GameObject:
   m_ObjectHideFlags: 0
@@ -7956,7 +7998,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
