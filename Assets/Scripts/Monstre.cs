@@ -44,7 +44,7 @@ public class Monstre : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Player not found! Make sure the player is tagged as 'Player'.");
+            Debug.LogWarning("Joueur introuvable ! Assurez-vous que le joueur est identifié comme « Joueur ».");
         }
 
         _wanderTimer = wanderInterval;
@@ -62,7 +62,7 @@ public class Monstre : MonoBehaviour
         {
             if (!_isWandering)
             {
-                Debug.Log("Player entered room area. Enemy starts wandering.");
+                Debug.Log("Le joueur entre dans la pièce. L'ennemi commence à errer.");
                 _isWandering = true;
                 _wanderTimer = 0f;
             }
@@ -78,7 +78,7 @@ public class Monstre : MonoBehaviour
         {
             if (_isWandering)
             {
-                Debug.Log("Player left room area. Enemy resumes chasing.");
+                Debug.Log("Le joueur quitte la pièce. L'ennemi reprend la poursuite.");
                 _isWandering = false;
             }
             _agent.SetDestination(_cible.position);
@@ -112,18 +112,18 @@ public class Monstre : MonoBehaviour
             
             if (Time.time - _spawnTime < damageStartDelay)
             {
-                Debug.Log("Damage ignored due to spawn delay.");
+                Debug.Log("Dégâts ignorés a cause du délai d'apparition");
                 return;
             }
 
-            Debug.Log("Enemy collided with Player.");
+            Debug.Log("L'ennemi est entré en collision avec le joueur");
 
             if (Time.time - lastDamageTime > damageCooldown)
             {
                 LivesManager livesManager = FindObjectOfType<LivesManager>();
                 if (livesManager != null)
                 {
-                    Debug.Log("Player hit! Losing a life.");
+                    Debug.Log("Joueur touché Perte de vie");
                     livesManager.LoseLife();
                     lastDamageTime = Time.time;
 
@@ -131,19 +131,19 @@ public class Monstre : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning("LivesManager not found in scene.");
+                    Debug.LogWarning("LivesManager pas trouvé dans la scène");
                 }
             }
             else
             {
-                Debug.Log("Damage cooldown active. No life lost.");
+                Debug.Log("Temps de recharge des dégâts actif pas perte de vie");
             }
         }
     }
 
     IEnumerator Respawn()
     {
-        // Hide enemy
+        
         _agent.enabled = false;
         _collider.enabled = false;
         foreach (var r in _renderers)
@@ -151,19 +151,19 @@ public class Monstre : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);
 
-        // Reset position
+       
         transform.position = _spawnPosition;
 
-        // Reactivate visuals and movement
+        
         foreach (var r in _renderers)
             r.enabled = true;
         _agent.enabled = true;
 
-        // Wait briefly before enabling collider to avoid instant damage
+        
         yield return new WaitForSeconds(0.5f);
         _collider.enabled = true;
 
-        // Reset spawn time for delay-based damage protection
+        
         _spawnTime = Time.time;
     }
 }

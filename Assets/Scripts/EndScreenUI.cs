@@ -25,7 +25,7 @@ public class EndScreenUI : MonoBehaviour
 
     void Start()
     {
-        // First disable all panels
+
         Victoire1niveau.SetActive(false);
         Victoire.SetActive(false);
         Defaite.SetActive(false);
@@ -34,7 +34,7 @@ public class EndScreenUI : MonoBehaviour
         {
             if (GameResult.PreviousScene == "niveau1")
             {
-                // Activate Level 1 Victory
+        
                 Victoire1niveau.SetActive(true);
                 scoreText_Level1.text = "" + EndGameData.finalScore;
                 timeText_Level1.text = "" + FormatTime(EndGameData.timeLeft);
@@ -42,7 +42,7 @@ public class EndScreenUI : MonoBehaviour
             }
             else
             {
-                // Activate Regular Victory
+                
                 Victoire.SetActive(true);
                 scoreText_Regular.text = "" + EndGameData.finalScore;
                 timeText_Regular.text = "" + FormatTime(EndGameData.timeLeft);
@@ -51,7 +51,7 @@ public class EndScreenUI : MonoBehaviour
         }
         else
         {
-            // Activate Defeat screen
+            
             Defaite.SetActive(true);
             scoreText_Defeat.text = "" + EndGameData.finalScore;
             timeText_Defeat.text = "" + FormatTime(EndGameData.timeLeft);

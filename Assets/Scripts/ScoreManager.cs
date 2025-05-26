@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour
         score += amount;
         UpdateScoreUI();
 
-        if (score >= 3)
+        if (score >= 18)
         {
             GameResult.DidPlayerWin = true;
             GameResult.PreviousScene = SceneManager.GetActiveScene().name;

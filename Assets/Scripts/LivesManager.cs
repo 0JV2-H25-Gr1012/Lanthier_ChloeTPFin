@@ -36,15 +36,15 @@ public class LivesManager : MonoBehaviour
         {
             case 2:
                 Heart3.enabled = false;
-                Debug.Log("Lost 1st life. 2 remaining.");
+                Debug.Log("Perte de vie, 2 restantes");
                 break;
             case 1:
                 Heart2.enabled = false;
-                Debug.Log("Lost 2nd life. 1 remaining.");
+                Debug.Log("perte de vie, 1 restante");
                 break;
             case 0:
                 Heart1.enabled = false;
-                Debug.Log("Lost final life. Game Over!");
+                Debug.Log("perte de vie finale game over");
 
                 GameResult.DidPlayerWin = false;
                 GameResult.PreviousScene = SceneManager.GetActiveScene().name;

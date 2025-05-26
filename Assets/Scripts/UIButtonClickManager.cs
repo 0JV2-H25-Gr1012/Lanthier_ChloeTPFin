@@ -8,11 +8,11 @@ public class UIButtonClickManager : MonoBehaviour
 
     void Start()
     {
-        Button[] allButtons = FindObjectsOfType<Button>(true); // include inactive buttons
+        Button[] allButtons = FindObjectsOfType<Button>(true); 
 
         foreach (Button btn in allButtons)
         {
-            // Skip buttons that already have their own click logic
+            
             if (btn.GetComponent<UIButtonSoundOnly>() == null)
             {
                 btn.onClick.AddListener(() =>
