@@ -12,13 +12,13 @@ public class UIButtonSoundOnly : MonoBehaviour
 
     public void OnStartButtonClick()
     {
-        // ✅ Always play the click sound
+    
         if (audioSource != null && clickSound != null)
         {
             audioSource.PlayOneShot(clickSound);
         }
 
-        // 🚫 Only start the scene if the input field is filled
+        
         if (inputField != null && !string.IsNullOrWhiteSpace(inputField.text))
         {
             StartCoroutine(LoadSceneAfterDelay());
@@ -26,7 +26,7 @@ public class UIButtonSoundOnly : MonoBehaviour
         else
         {
             Debug.Log("Champ de saisie vide. Le jeu ne commence pas.");
-            // Optional: Show a warning message on screen
+            
         }
     }
 
